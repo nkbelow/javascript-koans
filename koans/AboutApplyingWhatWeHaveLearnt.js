@@ -37,6 +37,8 @@ describe("About Applying What We Have Learnt", function() {
       var productsICanEat = [];
 
       /* solve using filter() & all() / any() */
+      //for this I would filter so that products[i].containsNuts = false and then 
+      //make sure that mushrooms were not contained in ingredients using all or any
 
       expect(productsICanEat.length).toBe(FILL_ME_IN);
   });
@@ -93,23 +95,31 @@ describe("About Applying What We Have Learnt", function() {
   /* UNCOMMENT FOR EXTRA CREDIT */
   /*
   it("should find the largest prime factor of a composite number", function () {
+    //to solve would have to create list of all prime numbers less than composite number
+    //find largest number in that prime array that is a factor of composite number and then return
   
   });
 
   it("should find the largest palindrome made from the product of two 3 digit numbers", function () {
-    
+    // not exactly sure what this question is asking. If I understand correctly then we would multiply
+    two numbers together and then create all possible rearragement of numbers. Then test each to see if palindrome
+    and then return largest palindrome from our list of palindromes
   });
 
   it("should find the smallest number divisible by each of the numbers 1 to 20", function () {
+    //have array of numbers through 1-20 and test all of the numbers to see if num%(number in 1-20 list) === 0
+    //start off with 21 and use a while loop to increase until we get our number
       
     
   });
 
   it("should find the difference between the sum of the squares and the square of the sums", function () {
+    //function should take two arguments add sum of squares and square the sum and then add subtract to find the diff
     
   });
 
   it("should find the 10001st prime", function () {
+    //create array of primes until length is 10000. Then return numbers at array[10000]
 
   });
   */
