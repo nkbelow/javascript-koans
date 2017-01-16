@@ -119,7 +119,7 @@ describe("About Applying What We Have Learnt", function() {
   });
 
   it("should find the 10001st prime", function () {
-    //create array of primes until length is 10000. Then return numbers at array[10000]
+    //create array of primes until length is 10000. Then return numbers at array[10000]git 
 
   });
   */
