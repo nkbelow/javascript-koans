@@ -92,11 +92,29 @@ describe("About Applying What We Have Learnt", function() {
   });
 
   /*********************************************************************************/
-  /* UNCOMMENT FOR EXTRA CREDIT */
-  /*
+   UNCOMMENT FOR EXTRA CREDIT 
+  
   it("should find the largest prime factor of a composite number", function () {
     //to solve would have to create list of all prime numbers less than composite number
     //find largest number in that prime array that is a factor of composite number and then return
+    function isPrime(number) {
+      for (var i = 2; i < number; i++) {
+        if (number % i === 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+    var largestPrime = function(num) {
+      var primeArray = [];
+      for (var a = 2; a <= num; a++) {
+        if (num % a === 0 && isPrime(a)) {
+          primeArray.push(a);
+        }
+      }
+      return primeArray[primeArray.length - 1];
+    }
+    expect(largestPrime(16))toBe(2);
   
   });
 
@@ -122,5 +140,5 @@ describe("About Applying What We Have Learnt", function() {
     //create array of primes until length is 10000. Then return numbers at array[10000]git 
 
   });
-  */
+  
 });
